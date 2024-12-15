@@ -14,6 +14,11 @@ const librarySchema = new mongoose.Schema({
         trim: true
     },
 
+    password:{
+        type: String,
+        require: true
+    },
+
     books:[{
         type: mongoose.Schema.ObjectId,
         ref: 'book',
