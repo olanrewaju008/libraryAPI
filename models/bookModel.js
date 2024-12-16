@@ -27,10 +27,9 @@ const bookSchema = new mongoose.Schema({
         required: true
     },
 
-    // New Fields for Borrowing
     borrowedBy: { 
         type: mongoose.Schema.ObjectId, 
-        ref: 'User',   // Assuming you have a User model for registered users
+        ref: 'User',
         default: null
     },
 

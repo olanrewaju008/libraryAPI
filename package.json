@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["bookstore", "library", "education", "books"],
+  "author": "olanrewaju",
   "license": "ISC",
-  "description": "",
+  "description": "library API",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

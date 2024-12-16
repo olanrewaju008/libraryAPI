@@ -121,7 +121,7 @@ exports.returnBook = async (req, res) => {
         book.dueDate = null;
         await book.save();
 
-        const borrowedBook = await borrowedBook.findOne({ bookId, userId, isReturned: false });
+        const borrowedBook = await bookModel.findOne({ bookId, userId, isReturned: false });
         if (borrowedBook) {
             borrowedBook.returnedDate = new Date();
             borrowedBook.isReturned = true;
